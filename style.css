@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:ital,wght@0,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: radial-gradient(circle at 3% 25%, #002853 0, #040c18 100%);
+  --dancing-font: "Dancing Script", cursive;
+  --font-family: "Open Sans", sans-serif;
+  --color-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --color-hover: #ae67fa;
+}
+body {
+  background: var(--main-color);
+  font-family: var(--font-family);
+  color: white;
+  margin-left: 4rem;
+  max-width: 100vw;
+}
+.questions-container {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--dancing-font);
+  color: #f49867;
+}
+.questions-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span {
+  padding: 5px 10px;
+  width: 75%;
+  display: flex;
+  margin: 0 80px;
+  border-radius: 20px;
+}
+
+input[type="radio"] {
+  /* Hide the default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ff00; /* Green border */
+  border-radius: 50%; /* Make it a circle */
+  outline: none; /* Remove the focus outline */
+  cursor: pointer; /* Show the pointer cursor on hover */
+  /* Add some space between the radio button and its label */
+  margin-right: 8px;
+}
+
+/* Add custom styles to indicate the selected state */
+input[type="radio"]:checked {
+  background-color: #00ff00; /* Green background when selected */
+}
+button {
+  background: #ff4820;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+/* Swiper Js Styler */
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 50px;
+  margin-bottom: 4rem;
+}
+.swiper-wrapper {
+  width: 100vw;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

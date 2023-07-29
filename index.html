@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Questionnaire</title>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- External Script link -->
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h1 class="heading">Let's Know who you are.</h1>
+      <div class="questions-container swiper mySwiper">
+        <form action="submit" id="questionnaire" class="swiper-wrapper">
+          <!-- These swiper-slide classes are meant to give a unique styling to the presentation using the Swiper.Js Library -->
+          <div class="swiper-slide">
+            <!-- Question One -->
+            <p>1. What is your favorite color?</p>
+            <!-- Here are the choices for the first question. Each input  tag must have the same name.
+        For this quest class="choices
+        "ion, the name is q1. -->
+            <!-- The value is which answer the choice corresponds to. -->
+            <label for="q1_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q1"
+                  value="c1"
+                  id="q1_choice1"
+                  class="choices"
+                />
+                Red
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q1"
+                  value="c2"
+                  id="q1_choice2"
+                  class="choices"
+                />
+                Green
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q1"
+                  value="c3"
+                  id="q1_choice3"
+                  class="choices"
+                />
+                Yellow
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q1"
+                  value="c4"
+                  id="q1_choice4"
+                  class="choices"
+                />
+                Blue
+              </span>
+              <br />
+            </label>
+          </div>
+          <div class="swiper-slide">
+            <!-- This is the Second question -->
+            <p class="question">2. Which is your favorite pet?</p>
+            <!-- Here are the choices for the Second question. -->
+            <label for="q2_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q2"
+                  value="c1"
+                  id="q2_choice1"
+                  class="choices"
+                />
+                Dog
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q2"
+                  value="c2"
+                  id="q2_choice2"
+                  class="choices"
+                />
+                Cat
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q2"
+                  value="c3"
+                  id="q2_choice3"
+                  class="choices"
+                />
+                Rabbit
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q2"
+                  value="c4"
+                  id="q2_choice4"
+                  class="choices"
+                />
+                Kangaroo
+              </span>
+              <br />
+            </label>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- This is the Third question -->
+            <p class="question">3. What is your hobby?</p>
+            <!-- Here are the choices for the Third question.-->
+            <label for="q3_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q3"
+                  value="c1"
+                  id="q3_choice1"
+                  class="choices"
+                />
+                Reading Articles
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q3"
+                  value="c2"
+                  id="q3_choice2"
+                  class="choices"
+                />
+                Gaming
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q3"
+                  value="c3"
+                  id="q3_choice3"
+                  class="choices"
+                />
+                Watching Movies
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q3"
+                  value="c4"
+                  id="q3_choice4"
+                  class="choices"
+                />
+                Attending Hackathons
+              </span>
+              <br />
+            </label>
+          </div>
+          <div class="swiper-slide">
+            <!-- This is the Fourth question -->
+            <p class="question">4. How often do you interact with friends?</p>
+            <!-- Here are the choices for the Fourth question.-->
+            <label for="q4_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q4"
+                  value="c1"
+                  id="q4_choice1"
+                  class="choices"
+                />
+                Once in a Blue Moon
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q4"
+                  value="c2"
+                  id="q4_choice2"
+                  class="choices"
+                />
+                I prefer interacting with them via video calls
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q4"
+                  value="c3"
+                  id="q4_choice3"
+                  class="choices"
+                />
+                I love being with them every day during the wee hours.
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q4"
+                  value="c4"
+                  id="q4_choice4"
+                  class="choices"
+                />
+                Never
+              </span>
+              <br />
+            </label>
+          </div>
+          <div class="swiper-slide">
+            <!-- Question five -->
+            <p class="question">5. Which is your favourite stack??</p>
+            <!-- Here are the choices for the Fifth question.-->
+            <label for="q5_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q5"
+                  value="c1"
+                  id="q5_choice1"
+                  class="choices"
+                />
+                JavaScript
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q5"
+                  value="c2"
+                  id="q5_choice2"
+                  class="choices"
+                />
+                Python
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q5"
+                  value="c3"
+                  id="q5_choice3"
+                  class="choices"
+                />
+                Ruby
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q5"
+                  value="c4"
+                  id="q5_choice4"
+                  class="choices"
+                />
+                None of the above
+              </span>
+              <br />
+            </label>
+          </div>
+          <div class="swiper-slide">
+            <!-- Question Six -->
+            <p class="question">
+              6. How many years have you been into the job market?
+            </p>
+            <!-- Here are the choices for the Sixth question.-->
+            <label for="q6_choices" aria-required="true" class="options">
+              <span>
+                <input
+                  type="radio"
+                  name="q6"
+                  value="c1"
+                  id="q6_choice1"
+                  class="choices"
+                />
+                0-3 years
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q6"
+                  value="c2"
+                  id="q6_choice2"
+                  class="choices"
+                />
+                4-7 years
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q6"
+                  value="c3"
+                  id="q6_choice3"
+                  class="choices"
+                />
+                8-12 years
+              </span>
+              <br />
+              <span>
+                <input
+                  type="radio"
+                  name="q6"
+                  value="c4"
+                  id="q6_choice4"
+                  class="choices"
+                />
+                Am still learning
+              </span>
+              <br />
+            </label>
+          </div>
+        </form>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button type="button" onclick="submitForm()"  id="submitButton">
+        Submit Details
+      </button>
+      <div id="result" class="border border-info-subtle m-5"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      //swiper JS
+      //Swiper Js is a JavaScript Library Used to Create stunning sliders on a webpage.
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
